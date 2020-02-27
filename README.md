@@ -48,4 +48,38 @@ sudo yum install -y jenkins
 
 Start jenkins
 ```
+sudo service jenkins start
+```
+
+Access Jenkins server using the public DNS of your ec2 on port 8080
+```
+http://{ec2-public-dns}:8080
+```
+
+*Note : Here you might have to allow port 8080 in your security group settings*
+
+Useful tips
+
+To start jenkins on a diff port
+```
+Update port number in /etc/sysconfig/jenkins
+```
+
+To fetch initial admin password
+```
+sudo su -
+cd /var/lib/jenkins/secrets/
+cat initialAdminPassword
+```
+
+To stop Jenkins
+```
+sudo service jenkins stop
+```
+
+To uninstall Jenkins
+```
+sudo service jenkins stop
+sudo yum remove jenkins
+sudo rm -r /var/lib/jenkins
 ```
