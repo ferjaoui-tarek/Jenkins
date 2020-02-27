@@ -46,3 +46,6 @@ Install Jenkins.
 sudo yum install -y jenkins
 ```
 
+Start jenkins
+```
+```
