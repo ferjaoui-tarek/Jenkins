@@ -56,7 +56,7 @@ Access Jenkins server using the public DNS of your ec2 on port 8080
 http://{ec2-public-dns}:8080
 ```
 
-*Note : Here you might have to allow port 8080 in your security group settings*
+**Note : Here you might have to allow port 8080 in your security group settings**
 
 Useful tips
 
